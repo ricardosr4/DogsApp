@@ -13,10 +13,13 @@
         android:theme="@style/Theme.DogsApp"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activity.register.RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.PreLoginActivity"
+            android:name=".ui.activity.preLogin.presenter.PreLoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
