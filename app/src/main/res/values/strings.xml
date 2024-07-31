@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">DogsApp</string>
+    <string name="imageview">imageView</string>
+    <string name="login_con_google">Login con Google</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="invited">Invited</string>
+    <string name="en_caso_de_problemas">En caso de problemas,</string>
+    <string name="comunicarse_con">comunicarse con</string>
+    <string name="soporte">soporte</string>
+    <string name="friend">Friend</string>
+    <string name="search">Search</string>
+    <string name="en_caso_de_problemas_comunicarse_con">En caso de problemas comunicarse con</string>
 </resources>
