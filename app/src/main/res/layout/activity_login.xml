@@ -27,7 +27,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/comfortaa_bold"
-        android:text="@string/login_opt2"
+        android:text="@string/tvlogin_opt2"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
