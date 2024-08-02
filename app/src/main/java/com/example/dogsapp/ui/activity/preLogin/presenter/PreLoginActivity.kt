@@ -5,6 +5,7 @@ import android.os.Bundle
 
 import androidx.appcompat.app.AppCompatActivity
 import com.example.dogsapp.databinding.ActivityPreLoginBinding
+import com.example.dogsapp.ui.activity.HomeContainerActivity
 import com.example.dogsapp.ui.activity.register.RegisterActivity
 
 class PreLoginActivity : AppCompatActivity() {
@@ -21,6 +22,10 @@ class PreLoginActivity : AppCompatActivity() {
     private fun navigation() {
         binding.cvRegister.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+        binding.cvInvited.setOnClickListener {
+            val intent = Intent(this, HomeContainerActivity::class.java)
             startActivity(intent)
         }
 
