@@ -1,4 +1,4 @@
-package com.example.dogsapp.ui.activity
+package com.example.dogsapp.ui.activity.home.presenter
 
 import android.content.res.Configuration
 import android.os.Bundle

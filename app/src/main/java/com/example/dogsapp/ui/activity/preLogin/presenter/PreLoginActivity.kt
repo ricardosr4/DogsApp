@@ -6,8 +6,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.dogsapp.databinding.ActivityPreLoginBinding
 import com.example.dogsapp.ui.activity.login.LoginActivity
-import com.example.dogsapp.ui.activity.HomeContainerActivity
-import com.example.dogsapp.ui.activity.register.RegisterActivity
+import com.example.dogsapp.ui.activity.home.presenter.HomeContainerActivity
+import com.example.dogsapp.ui.activity.register.presenter.RegisterActivity
 
 class PreLoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPreLoginBinding
@@ -17,7 +17,7 @@ class PreLoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         navigation()
-        navLogin()
+
     }
 
 
@@ -30,15 +30,13 @@ class PreLoginActivity : AppCompatActivity() {
             val intent = Intent(this, HomeContainerActivity::class.java)
             startActivity(intent)
         }
-
-    }
-
-    private fun navLogin() {
         binding.cvLogin.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
     }
+
+
 }
 
