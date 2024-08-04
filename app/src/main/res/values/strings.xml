@@ -6,7 +6,9 @@
     <string name="imageview">imageView</string>
     <string name="login_con_google">Login con Google</string>
     <string name="login">Login</string>
+    <string name="tvlogin_opt2">Login</string>
     <string name="register">Register</string>
+    <string name="enter_login_opt2">entrar</string>
     <string name="registrarse">Registrarse</string>
     <string name="invited">Invited</string>
     <string name="en_caso_de_problemas">En caso de problemas,</string>
@@ -21,4 +23,5 @@
     <string name="ricardo_andres_soto_ramirez">Ricardo Andres Soto Ramirez</string>
     <string name="terminos_y_condiciones">Terminos y condiciones</string>
     <string name="home">Home</string>
+    <string name="password_login_opt2">Password</string>
 </resources>
