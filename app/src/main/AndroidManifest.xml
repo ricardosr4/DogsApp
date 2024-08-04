@@ -16,7 +16,10 @@
             android:name=".ui.activity.login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.register.RegisterActivity"
+            android:name=".ui.activity.home.presenter.HomeContainerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.register.presenter.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

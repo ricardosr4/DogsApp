@@ -1,4 +1,4 @@
-package com.example.dogsapp.ui.activity.register
+package com.example.dogsapp.ui.activity.register.presenter
 
 import android.content.Intent
 import android.os.Bundle

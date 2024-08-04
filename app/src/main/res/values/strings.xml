@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">DogsApp</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
     <string name="imageview">imageView</string>
     <string name="login_con_google">Login con Google</string>
     <string name="login">Login</string>
@@ -17,5 +20,8 @@
     <string name="nombre_completo">Nombre Completo</string>
     <string name="email_address">Email address</string>
     <string name="create_password">Create password</string>
+    <string name="ricardo_andres_soto_ramirez">Ricardo Andres Soto Ramirez</string>
+    <string name="terminos_y_condiciones">Terminos y condiciones</string>
+    <string name="home">Home</string>
     <string name="password_login_opt2">Password</string>
 </resources>
