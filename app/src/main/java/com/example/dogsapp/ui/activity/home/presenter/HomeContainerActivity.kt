@@ -12,6 +12,8 @@ import androidx.core.view.GravityCompat
 
 import com.example.dogsapp.R
 import com.example.dogsapp.databinding.ActivityHomeContainerBinding
+import com.example.dogsapp.ui.fragment.HomeFragment
+import com.example.dogsapp.ui.fragment.TerminosFragment
 import com.google.android.material.navigation.NavigationView
 
 class HomeContainerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -40,13 +42,28 @@ class HomeContainerActivity : AppCompatActivity(), NavigationView.OnNavigationIt
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
         binding.navView.setNavigationItemSelectedListener(this)
+
+        // Cargar HomeFragment por defecto
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.nav_host_fragment_container, HomeFragment())
+                .commit()
+        }
     }
 
-
+//navegacion para el menu drawer
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.nav_home -> Toast.makeText(this, "home", Toast.LENGTH_SHORT).show()
-            R.id.nav_Terminos -> Toast.makeText(this, "terminos", Toast.LENGTH_SHORT).show()
+            R.id.nav_home -> {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.nav_host_fragment_container, HomeFragment())
+                    .commit()
+            }
+            R.id.nav_Terminos -> {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.nav_host_fragment_container, TerminosFragment())
+                    .commit()
+            }
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
